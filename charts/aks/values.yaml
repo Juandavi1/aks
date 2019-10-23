@@ -1,0 +1,13 @@
+# Default values for aks.
+# This is a YAML-formatted file.
+# Declare variables to be passed into your templates.
+
+replicaCount: 2
+
+image:
+  repository: registrysiigo.azurecr.io/go-aks:1.0
+  pullPolicy: IfNotPresent
+
+service:
+  type: LoadBalancer
+  port: 8080
